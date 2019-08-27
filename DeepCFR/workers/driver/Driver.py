@@ -137,8 +137,8 @@ class Driver(DriverBase):
 
         # Delete past checkpoints
         s = [self._cfr_iter]
-        if self._cfr_iter > self._t_prof.checkpoint_freq + 1:
-            s.append(self._cfr_iter - self._t_prof.checkpoint_freq)
+        # if self._cfr_iter > self._t_prof.checkpoint_freq + 1:
+        #     s.append(self._cfr_iter - self._t_prof.checkpoint_freq)
 
         self._delete_past_checkpoints(steps_not_to_delete=s)
 
